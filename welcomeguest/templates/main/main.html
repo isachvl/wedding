@@ -1,0 +1,425 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Свадьба</title>
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+</head>
+ 
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        V & A
+    </div>
+
+    <nav>
+
+        <a href="#home">Главная</a>
+
+        <a href="#place">Место</a>
+
+        <a href="#info">Полезная информация</a>
+
+        <a href="#contacts">Контакты</a>
+
+    </nav>
+
+     
+
+</header>
+ 
+<section class="hero" id="home">
+    
+    <div class="hero-content">
+
+        <h1>Владислав & Анастасия</h1>
+
+        <p>
+            Мы будем рады видеть Вас<br>
+            на нашей свадьбе
+        </p>
+
+        <h2>21 августа 2026</h2>
+
+        <button
+            class="hero-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#guestModal">
+            Заполнить анкету
+        </button>
+    </div>
+
+</section>
+
+<section class="place" id="place">
+    <div class="section-header">
+        <h2>Место проведения</h2>
+    </div>
+
+    <!-- 1. Город Железногорск -->
+    <div class="place-item">
+        <div class="map-container">
+            <iframe id="map_330360532" frameborder="0" width="100%" height="600px" src="https://makemap.2gis.ru/widget?data=eJw1j0FuwyAQRe8y3aIIY0iwD9Cqu-witcrCCtMWCXsQnkhNLN-9Y6yyQv8xfx4LUAlYMLwhjcgl4gz95wL8yAg9vOLA94KgIBfKWLhywZHTxgUEnG8lZo407cGNEhW5vmjjmy8jyfN9CvgLfaP_z6rge1_4qHX7tjPFiWuDSMVp4CrTtQfrO9ca5Y4H07TNVaZjgN5bs14VjEM-0xx3gQXSwNBvL421zp9a5zsZV5A2LF3OGn3U3hnt9MmLHNEoakZK5SOU0uUHMX3UlMsd1z9Cu1i5" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+        </div>
+        <div class="place-info">
+            <h3 class="big-title">Город проведения</h3>
+            <a href="https://2gis.ru/zheleznogorsk-krasnoyarsk-region/geo/985785188745328/93.480385%2C56.213091?m=93.527354%2C56.225807%2F12.16" 
+               target="_blank" class="place-title-link">
+                <h2 class="city-name">Железногорск</h2>
+            </a>
+            <div class="description">
+                <p>Железногорск — это маленький и уютный город среди сибирской тайги, где чистые улицы утопают в зелени, на набережной городского озера всегда тихо и спокойно, а жизнь течёт размеренно, без суеты.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. ЗАГС -->
+    <div class="place-item reverse">
+        <div class="map-container">
+            <iframe id="map_498368779" frameborder="0" width="100%" height="600px" src="https://makemap.2gis.ru/widget?data=eJw1j0FuwyAQRe8y3aLIOGBjH6BVd9lFapWFFaYtEvYgPJGaWL57J6AiFug_ePPZgLLHjP4NaUbOAVcYPzfge0IY4RUnvmUEBSlTwsyFCw4cn1yAx_WaQ-JASw2uFCnL8aVpnf5qJXm8Lx5_YdTN_9oVfNeB96Kr004UFi4GKRWWiUuZ4Xiwxjltle0O7dFYrS_yPngRmq7ZLwrmKZ1oDbXDBnFiGOvl3nStk206pyA-cdEN2vZD3-vG6EH6Ec0ic2KVv1CM5x_E-FFSzjfc_wAwT1le" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+        </div>
+        <div class="place-info">
+            <a href="https://2gis.ru/zheleznogorsk-krasnoyarsk-region/firm/70000001076712314/93.548817%2C56.234511?m=93.549128%2C56.234517%2F19.5" 
+               target="_blank" class="place-title-link">
+                <h3>ЗАГС</h3>
+            </a>
+            <div class="description">
+                <table>
+                    <p>Встречаемся по адресу: проспект Курчатова, 42</p>
+                    <p>Начало регистрации в 15:30, просим подойти немного заранее, за 15  минут</p>
+                    <p>После торжественной регистрации приглашаем всех желающих на прогулку и свадебную фотосессию, вместе пройдемся по мосту, повесим замочек молодоженов, прокатимся по городу с ветерком </p>
+                    <p>Если прогулка покажется Вам утомительной, Вы можете отдохнуть после регистрации и присоединиться к нам уже в кафе</p>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Кафе / Банкет -->
+    <div class="place-item">
+        <div class="map-container">
+           <iframe id="map_560045450" frameborder="0" width="100%" height="600px" src="https://makemap.2gis.ru/widget?data=eJw1j0FLxDAQhf_LeA1LkjZN0-uCu4rIehKUPZTtqIG0U9IsuJb-d6ep5jLhvTcvX2ag2GHE7oDUY4oeJ2jeZ0i3EaGBe2zTNSIIGCONGFP22fYprL58PL5Mz3sjn-I6LQc7nC7Rj8nTwAEWLhQo8vVO6lp9aFZ-HoYOv6FR8v8sAj43gFuu314_kR9SbmBIP7Qpw7liZ7StrBOm2mmjy1qded930GitzHIW0LfjiSa_McwQ2gTNX9hKZYuyNpU0AsLq577auUJpZwupSwYk6hnPci1_hkJ4_UIMb1lN8YrLL2SIXk0" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+        </div>
+        <div class="place-info">
+            <a href="https://2gis.ru/zheleznogorsk-krasnoyarsk-region/search/%D0%B1%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB%20%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA/firm/70000001032364398?m=94.117686%2C56.735965%2F7.64" 
+               target="_blank" class="place-title-link">
+            <h3>Банкет</h3>
+            </a>
+            <div class="description">
+                <table>
+                    <p>Сбор гостей ожидается в 17:30 в кафе "Байкал" по адресу: Школьная улица,42  </p>
+                    <p>Начало банкета ориентировочно в 18:00  </p>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="info" id="info">
+    <div class="section-header">
+        <h2>Полезная информация</h2>
+    </div>
+
+    <div class="info-grid">
+
+        <div class="info-card weather-card">
+        <div class="card-icon">🌤️</div>
+        <h3>Погода 21 августа</h3>
+        <p class="date">Железногорск</p>
+        
+        <div id="weather-info">
+            <p>Загрузка прогноза...</p>
+        </div>
+        
+        <p class="small">Накануне мероприятия посмотрите прогноз погоды, возможно, будет дождик. Не забывайте взять с собой зонтик </p>
+    </div>
+
+    <script>
+    async function loadWeather() {
+        const lat = 56.23;  // Железногорск
+        const lon = 93.53;
+        
+        try {
+            const response = await fetch(
+                `https://api.open-meteo.com/v1/forecast?` +
+                `latitude=${lat}&longitude=${lon}` +
+                `&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode` +
+                `&timezone=Asia/Krasnoyarsk`
+            );
+            
+            const data = await response.json();
+            const day = data.daily;
+
+            // Прогноз на 21 августа (нужно будет подставить правильный индекс при приближении даты)
+            const index = 0; // сейчас 0 = сегодня, позже изменишь на нужный день
+
+            let rainText = '';
+            if (day.precipitation_probability_max[index] > 30) {
+                rainText = `<p style="color:#e74c3c;">Ожидается дождь (${day.precipitation_probability_max[index]}%)</p>`;
+            } else {
+                rainText = `<p>Осадков мало</p>`;
+            }
+
+            document.getElementById('weather-info').innerHTML = `
+                <div class="weather-main">
+                    <span class="temp-big">${day.temperature_2m_max[index]}°</span>
+                    <span class="temp-small"> / ${day.temperature_2m_min[index]}°</span>
+                </div>
+                ${rainText}
+            `;
+        } catch (e) {
+            document.getElementById('weather-info').innerHTML = `
+                <p style="color:#e74c3c;">Не удалось загрузить прогноз</p>
+            `;
+        }
+    }
+
+    // Автозагрузка
+    document.addEventListener('DOMContentLoaded', loadWeather);
+    </script>
+
+        <!-- 2. Конкурсы и развлечения -->
+        <div class="info-card">
+            <div class="card-icon">🏆</div>
+            <h3>Конкурсы и развлечения</h3>
+            <p>Не забывайте взять с собой хорошее настроение! Вас ждут конкурсы, танцы,песни и подарки. Мы будем благодарны, если Вы сможете взять с собой немного наличных денег различных номиналов для возможности участия в интересных и весёлых конкурсах!</p>
+        </div>
+
+        <!-- 3. Дресс-код / Что надеть -->
+        <div class="info-card">
+            <div class="card-icon">👗</div>
+            <h3>Дресс-код</h3>
+            <p>Особенного строгого стиля и дресс-кода у нашего мероприятия нет. Приходите в тех цветах и фактурах, которые Вам нравятся и поднимают настроение 
+        </div>
+
+        <!-- 4. Парковка / Как добраться -->
+        <div class="info-card">
+            <div class="card-icon">🅿️</div>
+            <h3>Парковка и проезд</h3>
+            <p>Мы приложим все усилия, чтобы Вы смогли найти нас,и комфортно добрались до места мероприятия. Но если Вы захотите приехать на личном автомобиле, то рядом с площадкой есть большая бесплатная парковка.</p>
+        </div>
+
+        <!-- 5. Фото и видео -->
+        <div class="info-card">
+            <div class="card-icon">📸</div>
+            <h3>Фотограф и видеограф</h3>
+            <p>На нашей свадьбе будет работать профессиональный фотограф. Но мы будем очень Вам благодарны, если Вы будете снимать запоминающиеся моменты на Ваш телефон, а после праздника пришлёте в общий чат. Мы хотели бы смонтировать небольшой фильм об этом дне, и просим у Вас помощи. Если будет возможность, то снимайте преимущественно в горизонтальном расположении камеры, и побольше видео. Спасибо!</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<footer id="contacts">
+    <h2>Контакты</h2>
+    
+    <div class="contacts-wrapper">
+        <!-- Левая колонка - телефоны -->
+        <div class="contacts-left">
+            <div class="person">
+                <h3>Владислав</h3>
+                <a href="tel:+79991111111" class="phone-link">+7 (983) 289-90-66</a>
+            </div>
+            <div class="person">
+                <h3>Анастасия</h3>
+                <a href="tel:+79992222222" class="phone-link">+7 (906) 198-66-64</a>
+            </div>
+        </div>
+
+        <!-- Правая колонка - QR сверху, кнопка под ним -->
+        <div class="qr-group">
+            <h3>Группа в Максе</h3>
+            
+            <img src="{% static 'img/qr-code.png' %}" 
+                 alt="QR-код на группу" 
+                 class="qr-code">
+            
+            <a href="https://max.ru/join/5eKvk9OnIvYYttI---SnkQKwFEaypcrEzpSe7fv4G7s" 
+               target="_blank" 
+               class="group-link">
+               Присоединиться к группе
+            </a>
+        </div>
+    </div>
+
+    <p class="footer-text">
+        Спасибо, что будете с нами ❤️
+    </p>
+    <p class="footer-text">
+        Присоединяйтесь к беседе в Максе, чтобы поддерживать связь на протяжении мероприятия, узнавать о возможных изменениях и делиться фото и видео
+    </p>
+<div class="modal fade" id="guestModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content wedding-modal">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Подтверждение участия
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <form method="post">
+
+                {% csrf_token %}
+
+                <div class="modal-body">
+
+                    <div class="modal-body">
+
+                            <div class="mb-3">
+                                <label class="form-label">ФИО</label>
+                                {{ form.full_name }}
+                            </div>
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Дополнительные гости
+                                </label>
+
+                                <div id="guestsContainer"></div>
+
+                                <button
+                                    type="button"
+                                    id="addGuest"
+                                    class="btn btn-outline-success mt-3">
+
+                                    + Добавить гостя
+
+                                </button>
+
+                                <!-- Сюда перед отправкой соберется список -->
+                                <input
+                                    type="hidden"
+                                    name="extra_guests"
+                                    id="id_extra_guests">
+
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Телефон</label>
+                                {{ form.phone }}
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Вы придёте?</label>
+                                {{ form.attendance }}
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Комментарий</label>
+                                {{ form.comment }}
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Пожелания по еде/напиткам</label>
+                                {{ form.wish }}
+                            </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Закрыть
+
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="btn btn-success">
+
+                        Отправить
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+{% if show_modal %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const modal = new bootstrap.Modal(
+        document.getElementById("guestModal")
+    );
+
+    modal.show();
+
+});
+</script>
+{% endif %}
+<script src="{% static 'js/addTextview.js' %}"></script>
+
+</body>
+{% if already_registered %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    new bootstrap.Modal(document.getElementById("alreadyModal")).show();
+});
+</script>
+{% endif %}
+<div class="modal fade" id="alreadyModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content already-modal">
+
+            <div class="modal-body text-center p-5">
+
+                <div class="icon">✓</div>
+
+                <h2>Вы уже подтвердили участие</h2>
+
+                <p>
+                    С этого устройства регистрация уже была отправлена.
+                </p>
+
+                <button
+                    class="btn wedding-btn mt-4"
+                    data-bs-dismiss="modal">
+                    Понятно
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</html>
+
+
+
+
